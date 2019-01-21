@@ -4,43 +4,44 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>RPS Multiplayer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css"/>
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+ 
     <script> src = "https://www.gstatic.com/firebasejs/live/3.0/firebase.js"</script>
 </head>
 
 <body>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4">Rock, Paper, Scissors!</h1>
-            <p class="lead"></p>
+            <h1 class="display-4 text-center">Rock, Paper, Scissors!</h1>
+            <p class="lead">Choose an icon and see if you win!</p>
         </div>
     </div>
 
-    <container>
-        <div class="P1Buttons">
-                <row>
-                <col-4>
-                <h1>Player 1 Choices</h1>
-                </row>
-                
-                <button type="button" class="btn btn-outline-dark">Rock</button>
-                <br>
-                <button type="button" class="btn btn-outline-dark">Paper</button>
-                <br>
-                <button type="button" class="btn btn-outline-dark">Scissors</button>
+    <div class ="container">
+        <div class="gameButtons">
+            <div clas="row">
+                <div class="col-6">
+                    <h2>Player 1 Choices</h2>
+                </div>
+                <div class="col-6">
+                    <h2>Player 2 Choices</h2>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-outline-dark">Rock</button>
+            <br>
+            <button type="button" class="btn btn-outline-dark">Paper</button>
+            <br>
+            <button type="button" class="btn btn-outline-dark">Scissors</button>
         </div>
-    </container>
+    </div>
 
 
     <script src="./assets/javscript/rps.js"></script>
