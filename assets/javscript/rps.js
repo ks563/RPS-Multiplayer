@@ -1,4 +1,3 @@
-
 // Initialize Firebase
 var config = {
   apiKey: "AIzaSyCBB1uzdQ3BTh7-qkOM9V5otQFrycF6lPc",
@@ -10,12 +9,16 @@ var config = {
 };
 
 firebase.initializeApp(config);
-
-var database = firebase.database();
-
-var playerOne;
-var playerTwo;
+  
 var playerOneChoice;
 var playerTwoChoice;
+
+// $(".modal").modal("document", function () {
+
+// })
+
+var createUser = function () {
+  var gameName = $("#form-name");
+};
 
 

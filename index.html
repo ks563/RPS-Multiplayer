@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>RPS Multiplayer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css" />
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css"/>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
     <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -19,7 +19,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-
 
 </head>
 
@@ -30,6 +29,38 @@
             <p class="lead text-center">Choose an icon and see if you win!</p>
         </div>
     </div>
+
+    <!-- <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Enter your name:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-body">
+                        <div class="md-form">
+                            <input type="text" id="form-name" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="form-name">Your name</label>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+    <form>
+        <div class="form-group">
+            <label for="nameInput">Name</label>
+            <input type="name" class="form-control" id="fullName" aria-describedby="nameHelp" placeholder="Enter name">
+        </div>
+        <div class="form-group">
+            <label for="emailInput">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 
     <div class="container">
         <div clas="row">
@@ -45,7 +76,7 @@
             <br>
             <button type="button" class="btn btn-outline-dark" data-target="scissors">Scissors</button>
         </div>
-       
+
 
         <div clas="row">
             <div class="col">
@@ -64,8 +95,9 @@
 
     </div>
 
-
+    <script src="./assets/javscript/auth.js"></script>
     <script src="./assets/javscript/rps.js"></script>
+    <script src="./assets/javscript/chat.js"></script>
 </body>
 
 </html>
