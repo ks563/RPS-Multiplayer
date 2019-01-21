@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
-
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
@@ -18,32 +18,48 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
 
-    <script> src = "https://www.gstatic.com/firebasejs/live/3.0/firebase.js"</script>
+
 </head>
 
 <body>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4 text-center">Rock, Paper, Scissors!</h1>
-            <p class="lead">Choose an icon and see if you win!</p>
+            <p class="lead text-center">Choose an icon and see if you win!</p>
         </div>
     </div>
 
     <div class="container">
         <div clas="row">
-            <div class="col-6">
+            <div class="col">
                 <h2>Player 1 Choices</h2>
             </div>
-            <div class="col-6">
+        </div>
+
+        <div class="btn-grp1">
+            <button type="button" class="btn btn-outline-dark" data-target="rock">Rock</button>
+            <br>
+            <button type="button" class="btn btn-outline-dark" data-target="paper">Paper</button>
+            <br>
+            <button type="button" class="btn btn-outline-dark" data-target="scissors">Scissors</button>
+        </div>
+       
+
+        <div clas="row">
+            <div class="col">
                 <h2>Player 2 Choices</h2>
             </div>
         </div>
 
-        <button type="button" class="btn btn-outline-dark">Rock</button>
-        <br>
-        <button type="button" class="btn btn-outline-dark">Paper</button>
-        <br>
-        <button type="button" class="btn btn-outline-dark">Scissors</button>
+        <div class="btn-grp2">
+            <button type="button" class="btn btn-outline-dark" data-target="rock">Rock</button>
+            <br>
+            <button type="button" class="btn btn-outline-dark" data-target="paper">Paper</button>
+            <br>
+            <button type="button" class="btn btn-outline-dark" data-target="scissors">Scissors</button>
+        </div>
+
+
     </div>
 
 
