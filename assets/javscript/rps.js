@@ -17,8 +17,4 @@ var playerTwoChoice;
 
 // })
 
-var createUser = function () {
-  var gameName = $("#form-name");
-};
-
 
