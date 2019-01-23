@@ -1,0 +1,12 @@
+.parent-container {
+    display: flex;
+ }
+
+.container{
+    /* display: inline; */
+    margin: 5%;
+}
+
+.chat-box{
+    margin: 5%;
+}
